@@ -31,7 +31,7 @@ function setStatusBarHeight() {
   }
 }
 
-setStatusBarHeight();
+// setStatusBarHeight();
 
 /* Layout */
 const {height: screenHeight, width: screenWidth} = Dimensions.get(dimensionsScope.SCREEN);
@@ -87,7 +87,7 @@ function updateConstants(dimensions) {
   constants.isSmallScreen = constants.screenWidth <= 340;
   constants.isShortScreen = constants.screenHeight <= 600;
 
-  setStatusBarHeight();
+  // setStatusBarHeight();
 }
 
 Dimensions.addEventListener('change', updateConstants);
